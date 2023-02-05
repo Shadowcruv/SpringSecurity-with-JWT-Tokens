@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Login Portal</title>
+    <link rel="stylesheet" th:href="@{/css/mystyle.css}" >
+    <link rel="stylesheet" th:href="@{/css/mystyle1.css}">
+    <link rel="icon" type="image/x-icon" href="images.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="center">
+    <h1>Login</h1>
+    <form class="form-signin" method="post" action="/login">
+        <h2 class="form-signin-heading">EXAMPLE sign in</h2>
+        <p>
+            <label for="username" class="sr-only">Username</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+        </p>
+        <p>
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required="">
+        </p>
+        <p>
+            <label for="remember-me" class="sr-only">Remember me?</label>
+            <input type="checkbox" id="remember-me" name="remember-me" class="form-control">
+        </p>
+        <input name="_csrf" type="hidden" value="507dae7d-c67c-432d-afc8-f5c86ff3296a">
+        <div class="pass">Forgot Password?</div>
+        <input type="submit" value="Login">
+        <div class="signup_link">
+            Not a member? <a href="Registration Form.html">Signup</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
